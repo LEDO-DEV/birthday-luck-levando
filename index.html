@@ -13,7 +13,7 @@
 
   <div class="w-screen flex justify-center items-center h-screen bg-zinc-800 flex-col">
     <h3 class="text-white mb-5 text-xl font-semibold">
-      Birthday Luck Ranking
+      Bảng xếp hạng may mắn Sinh Nhật - LE VAN DO
     </h3>
     <form id="searchForm" class="flex items-center bg-neutral-600 shadow-md rounded-full p-4 lg:w-[30vw]" onsubmit="showPopup(event)">
       <input 
@@ -38,11 +38,11 @@
     class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
   >
     <div class="bg-white p-6 rounded-lg shadow-lg text-center w-[300px]">
-      <h3 class="font-semibold mb-3">Congratulations!!!</h3>
+      <h3 class="font-semibold mb-3">Xin Chúc Mừng Thí Chủ!!!</h3>
       <h4 class="font-semibold mb-3">You're on</h4>
       <p id="popupMsg" class="text-gray-700 font-medium mb-4 text-8xl">
       </p>
-      <p class="my-3">Of Birthday Lucky Ranking</p>
+      <p class="my-3">Xếp hạng may mắn của ngày Sinh Nhật!</p>
       <button 
         onclick="closePopup()" 
         class="bg-black text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none"
@@ -69,7 +69,7 @@
 
       var searchValue = document.getElementById("searchInput").value
 
-      // LE VAN DO
+      //LE VAN DO
       const regex = /^\d+\/\d+$/
       if (searchValue.indexOf("/") < 0 || !regex.test(searchValue)) {
         const errMsg = document.getElementById("errMsg")
@@ -89,7 +89,7 @@
         return
       }
 
-       // LE VAN DO HACKER
+       //LE VAN DO
       document.getElementById('popup').classList.remove('hidden');
       const popupMsg = document.getElementById('popupMsg')
       popupMsg.textContent = birtdayWithRank.slice(0, birtdayWithRank.indexOf("."))
